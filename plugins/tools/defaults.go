@@ -24,7 +24,7 @@ func NeeDefaults(getVendorsModels func() (*ai.VendorsModels, error)) (ret *Defau
 	ret.Vendor = ret.AddSetting("Vendor", true)
 
 	ret.Model = ret.AddSetupQuestionCustom("Model", true,
-		"Enter the index the name of your default model")
+		"Enter the index name of your default model")
 
 	ret.ModelContextLength = ret.AddSetupQuestionCustom("Model Context Length", false,
 		"Enter model context length")
